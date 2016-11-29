@@ -1,0 +1,36 @@
+{
+  "name": "stt",
+  "version": "0.0.1",
+  "description": "Speech To Text",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava -e ts \"test/**/*.spec.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zixia/node-stt.git"
+  },
+  "keywords": [
+    "speech",
+    "text"
+  ],
+  "author": "Huan LI <https://git.io/zixia>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zixia/node-stt/issues"
+  },
+  "homepage": "https://github.com/zixia/node-stt#readme",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.0",
+    "querystring": "^0.2.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "0.0.2",
+    "@types/node": "0.0.0",
+    "@types/request": "0.0.36",
+    "ava": "^0.17.0",
+    "ts-node": "^1.7.0",
+    "typescript": "^2.0.10"
+  }
+}
