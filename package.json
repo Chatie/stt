@@ -2,7 +2,8 @@
   "name": "stt",
   "version": "0.0.1",
   "description": "Speech To Text",
-  "main": "index.js",
+  "main": "dist/stt.js",
+  "types": "dist/stt.d.ts",
   "scripts": {
     "test": "ava -e ts \"test/**/*.spec.ts\""
   },
@@ -32,5 +33,19 @@
     "ava": "^0.17.0",
     "ts-node": "^1.7.0",
     "typescript": "^2.0.10"
+  },
+  "files": [
+    "CHANGELOG",
+    "LICENSE",
+    "README.md",
+    "package.json",
+    "*.js",
+    "*.js.map",
+    "*.d.ts",
+    "dist/",
+    "src/"
+  ],
+  "publishConfig": {
+    "tag": "next"
   }
 }

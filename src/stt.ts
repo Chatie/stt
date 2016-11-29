@@ -153,3 +153,5 @@ function streamToString(stream): Promise<string> {
 
   })
 }
+
+typeof streamToString
