@@ -5,6 +5,7 @@
   "main": "dist/stt.js",
   "types": "dist/stt.d.ts",
   "scripts": {
+    "dist": "tsc",
     "test": "ava -e ts \"test/**/*.spec.ts\""
   },
   "repository": {
@@ -23,7 +24,6 @@
   "homepage": "https://github.com/zixia/node-stt#readme",
   "dependencies": {
     "fluent-ffmpeg": "^2.1.0",
-    "querystring": "^0.2.0",
     "request": "^2.79.0"
   },
   "devDependencies": {
