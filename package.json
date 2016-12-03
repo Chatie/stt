@@ -1,7 +1,7 @@
 {
   "name": "stt",
   "version": "0.0.1",
-  "description": "Speech To Text",
+  "description": "Speech To Text as easy as possible",
   "main": "dist/stt.js",
   "types": "dist/stt.d.ts",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zixia/node-stt.git"
+    "url": "git+https://github.com/wechaty/stt.git"
   },
   "keywords": [
     "speech",
@@ -19,10 +19,11 @@
   "author": "Huan LI <https://git.io/zixia>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zixia/node-stt/issues"
+    "url": "https://github.com/wechaty/stt/issues"
   },
-  "homepage": "https://github.com/zixia/node-stt#readme",
+  "homepage": "https://github.com/wechaty/stt#readme",
   "dependencies": {
+    "@google-cloud/speech": "^0.4.1",
     "fluent-ffmpeg": "^2.1.0",
     "request": "^2.79.0"
   },

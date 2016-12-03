@@ -1,8 +1,7 @@
 /**
+ * stt - Speech to text
  *
- * STT - Speech to Text
- *
- * https://github.com/zixia/node-stt
+ * https://github.com/wechaty/stt/
  *
  */
 import { PassThrough }        from 'stream'

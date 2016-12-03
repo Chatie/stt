@@ -1,42 +1,42 @@
+/**
+ * stt - Speech to text
+ *
+ * https://github.com/wechaty/stt/
+ *
+ */
 const Speech = require('@google-cloud/speech')
 
-function sttEngineGoogle(inputStream): Promise<string> {
-  const API_KEY='AIzaSyAiOFC1pOzUNW4IskqSdJUqqftGZzgGX6M'
+const API_KEY='AIzaSyAiOFC1pOzUNW4IskqSdJUqqftGZzgGX6M'
 
-  const options = {
-    config: {
-      encoding: 'LINEAR16',
-      sampleRate: 16000
-    },
-    key: API_KEY,
+function sttEngineGoogle(inputStream): Promise<string> {
+  const key = API_KEY
+
+  const config = {
+    encoding: 'LINEAR16',
+    sampleRate: 16000,
   }
 
-  const speech = Speech({
-
-  })
-
-  var request = {
-    config: {
-      encoding: 'LINEAR16',
-      sampleRate: 16000,
-    },
+  const options = {
+    config,
+    key,
     singleUtterance: false,
     interimResults: false,
   }
 
-  return new Promise<string>((resolve, reject) => {
-    inputStream.pipe(
-      speech.createRecognizeStream(request))
+  const speech = Speech({
+    projectId: 'wechaty-bo'
+  })
+  const recongnizeStream = speech.createRecognizeStream(options)
 
-      speech(options, (err, results) => {
-        if (err) {
-          reject(err)
-          return
-        }
-        resolve(results)
-        return
-      })
-    )
+  return new Promise<string>((resolve, reject) => {
+    recongnizeStream
+    .on('error', err => reject(err))
+    .on('data', data => {
+      console.log('Data received: %j', data)
+      resolve(data)
+    })
+
+    inputStream.pipe(recongnizeStream)
   })
 }
 

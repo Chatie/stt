@@ -5,13 +5,28 @@ Currently support Chinese only. Will add more language(en/etc) and more engine(n
 
 # Quick Start
 
-```js
-import { stt } from 'stt'
+## JavaScript
+
+```javascript
+const stt = require('stt')
 
 const speechStream = createReadStream('./test/fixture/测试.mp3')
+
 stt(speechStream).then(text => {
   console.log('STT: ' + text)
 })
+```
+
+## TypeScript
+
+```typescript
+import { stt } from 'stt'
+
+const speechStream = createReadStream('./test/fixture/测试.mp3')
+
+const text = await stt(speechStream)
+
+console.log('STT: ' + text)
 ```
 
 # Requirement
@@ -20,13 +35,13 @@ stt(speechStream).then(text => {
 
 # Todo
 
-* [ ] Support Languages
+* Support Languages
   * [x] Chinese 普通话
   * [ ] English
-* [ ] Support Stream Formats
+* Support Stream Formats
   * [x] MP3 Input Stream
   * [ ] ANY Input Stream
-* [ ] Support Speech Recongnition Engine
+* Support Speech Recongnition Engines
   * [ ] [Google Cloud Speech API](https://cloud.google.com/speech/)
   * [ ] [Apple Siri Nuance Mix](https://developer.nuance.com/public/index.php?task=mix)
   * [ ] [Bing Speech API](https://www.microsoft.com/cognitive-services/en-us/speech-api)
@@ -39,4 +54,5 @@ stt(speechStream).then(text => {
 # Copyright
 
 2016© Huan LI <https://git.io/zixia>
+
 MIT LICENSE
