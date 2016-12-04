@@ -25,6 +25,7 @@
   "dependencies": {
     "@google-cloud/speech": "^0.4.1",
     "fluent-ffmpeg": "^2.1.0",
+    "google-speech-api": "^1.2.0",
     "request": "^2.79.0"
   },
   "devDependencies": {

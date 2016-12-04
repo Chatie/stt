@@ -10,7 +10,12 @@ import request      = require('request')
 import Ffmpeg       = require('fluent-ffmpeg')
 import querystring  = require('querystring')
 
-export async function stt(inputStream: NodeJS.ReadableStream): Promise<string> {
+type Format = 'mp3' | 'x-flac' | 'wav'
+type SttOption = {
+  format?: Format
+}
+
+export async function stt(inputStream: NodeJS.ReadableStream, options: SttOption = {}): Promise<string> {
   const worker  = new SttWorker(inputStream)
   const text    = await worker.toText()
   return text
