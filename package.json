@@ -30,8 +30,8 @@
   },
   "devDependencies": {
     "@types/fluent-ffmpeg": "0.0.2",
-    "@types/node": "6.0.52",
     "@types/request": "0.0.37",
+    "@types/node": "6.0.55",
     "ava": "^0.17.0",
     "ts-node": "^1.7.0",
     "typescript": "^2.0.10"
