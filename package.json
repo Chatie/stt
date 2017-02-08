@@ -34,7 +34,7 @@
     "@types/node": "6.0.59",
     "ava": "^0.17.0",
     "ts-node": "^1.7.0",
-    "typescript": "^2.0.10"
+    "typescript": "^2.1.6"
   },
   "files": [
     "CHANGELOG",
