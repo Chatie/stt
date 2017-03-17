@@ -23,15 +23,15 @@
   },
   "homepage": "https://github.com/wechaty/stt#readme",
   "dependencies": {
-    "@google-cloud/speech": "^0.4.1",
+    "@google-cloud/speech": "^0.5.0",
     "fluent-ffmpeg": "^2.1.0",
     "google-speech-api": "^1.2.0",
     "request": "^2.79.0"
   },
   "devDependencies": {
     "@types/fluent-ffmpeg": "0.0.2",
-    "@types/node": "0.0.0",
-    "@types/request": "0.0.36",
+    "@types/request": "0.0.39",
+    "@types/node": "6.0.59",
     "ava": "^0.17.0",
     "ts-node": "^1.7.0",
     "typescript": "^2.0.10"
