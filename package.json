@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wechaty/stt.git"
+    "url": "git+https://github.com/chatie/stt.git"
   },
   "keywords": [
     "speech",
     "text"
   ],
-  "author": "Huan LI <https://git.io/zixia>",
+  "author": "Huan LI <https://github.com/huan>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wechaty/stt/issues"
+    "url": "https://github.com/chatie/stt/issues"
   },
-  "homepage": "https://github.com/wechaty/stt#readme",
+  "homepage": "https://github.com/chatie/stt#readme",
   "dependencies": {
     "@google-cloud/speech": "^0.5.0",
     "fluent-ffmpeg": "^2.1.0",
