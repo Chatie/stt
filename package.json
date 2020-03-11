@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/chatie/stt#readme",
   "dependencies": {
-    "@google-cloud/speech": "^0.6.0",
+    "@google-cloud/speech": "^0.11.0",
     "fluent-ffmpeg": "^2.1.0",
     "google-speech-api": "^1.2.0",
     "request": "^2.79.0"
